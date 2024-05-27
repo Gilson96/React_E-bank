@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { accountActions } from '../features/accountSlice';
+import Button from './Button';
 
 const Form = ({title, buttonText, children, classname}) => {
     const dispatch = useDispatch();
@@ -10,7 +11,6 @@ const Form = ({title, buttonText, children, classname}) => {
 
         // built-in feature that helps
         // retrieving the form values
-
        const formData = new FormData(e.target)
        const userData = Object.fromEntries(formData.entries()); // {firstName: Gilson}
 
@@ -30,9 +30,11 @@ const Form = ({title, buttonText, children, classname}) => {
     
 
   return (
-    <form onSubmit={handleSubmit} className='flex flex-col w-full justify-center items-center'>
-        <h2>{title}</h2>
+    <form onSubmit={handleSubmit} className={`flex flex-col w-full justify-center items-center ${classname}`}>
+        <h2 className='w-full justify-start p-3 uppercase text-2xl'>{title}</h2>
+        <span className='text-left mb-3 w-[95%] h-0.5 bg-[#AD343E]'></span>
         {children}
+        
     </form>
   )
 }

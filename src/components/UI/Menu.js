@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
     HomeIcon,
@@ -13,42 +13,61 @@ import Logo from './Logo'
 import MenuList from './MenuList'
 
 
-const Menu = () => {
-
+const Menu = ({
+    showHomePage, 
+    homePage,
+    showCreatePage,
+    createPage,
+    showTransferPage,
+    transferPage,
+    showDepositPage,
+    depositPage,
+    showWithdrawPage,
+    withdrawPage,
+    showLogoutPage,
+    logoutPage
+}) => {
     return (
         <>
             <div className='flex flex-col h-full w-1/4 bg-[#474747] border-slate-200 p-3 shadow'>
                 <Logo />
                 <MenuList
-                    icon={<HomeIcon className='h-10 w-10'/>}
+                    icon={<HomeIcon className='h-12 w-12' />}
                     text={'Home'}
-                    link='/admin'
+                    setShowPage={showHomePage}
+                    showPage={homePage}
                 />
-                <MenuList 
-                    icon={<UserPlusIcon className='h-10 w-10'/>}
+                <MenuList
+                    icon={<UserPlusIcon className='h-12 w-12 ' />}
                     text={'Create Account'}
-                    link='/create'
+                    setShowPage={showCreatePage}
+                    showPage={createPage}
                 />
-                <MenuList 
-                    icon={<ArrowsRightLeftIcon className='h-10 w-10'/>}
+                <MenuList
+                    icon={<ArrowsRightLeftIcon className='h-12 w-12 ' />}
                     text={'Fund Transfer'}
-                    link='/transfer'
+                    setShowPage={showTransferPage}
+                    showPage={transferPage}
                 />
-                <MenuList 
-                    icon={<ArrowUpOnSquareStackIcon className='h-10 w-10'/>}
+                <MenuList
+                    icon={<ArrowUpOnSquareStackIcon className='h-12 w-12 ' />}
                     text={'Deposit'}
-                    link='/deposit'
+                    setShowPage={showDepositPage}
+                    showPage={depositPage}
                 />
-                <MenuList 
-                    icon={<ArrowDownOnSquareStackIcon className='h-10 w-10'/>}
+                <MenuList
+                    icon={<ArrowDownOnSquareStackIcon className='h-12 w-12 ' />}
                     text={'Withdraw'}
-                    link='/withdraw'
+                    setShowPage={showWithdrawPage}
+                    showPage={withdrawPage}
                 />
-                <MenuList 
-                    icon={<PowerIcon className='h-10 w-10'/>}
+                <MenuList
+                    icon={<PowerIcon className='h-12 w-12 ' />}
                     text={'Logout'}
-                    link='/'
+                    setShowPage={showLogoutPage}
+                    showPage={logoutPage}
                 />
+        
             </div>
         </>
     )
