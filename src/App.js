@@ -11,6 +11,7 @@ import Transfer from './components/screens/Transfer'
 import Deposit from './components/screens/Deposit'
 import Withdraw from './components/screens/Withdraw'
 import EditAccount from './components/screens/EditAccount';
+
 function App() {
   return (
     <>
@@ -25,9 +26,11 @@ function App() {
           <Route path='/deposit' element={<Deposit />} />
           <Route path='/withdraw' element={<Withdraw />} />
           <Route path="/edit" element={<EditAccount />} />
+          
         </Routes>
       </div>
     </>
+
   );
 }
 
