@@ -6,3 +6,19 @@
    font-weight: 400;
    font-style: normal;
 }
+
+#buttonBg{
+   background-color: white;
+}
+
+#buttonBg:hover{
+   background-color: #AD343E;
+}
+
+#modalStyle{
+   border-radius: 0.25rem;
+   background-color: #AD343E;
+   width: 500px;
+}
+
+
