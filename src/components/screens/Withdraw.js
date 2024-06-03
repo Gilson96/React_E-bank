@@ -32,14 +32,14 @@ const Deposit = () => {
     e.preventDefault();
     // dispatch(accountActions.updateBalance({ someId: parseInt(getToId), someValue: handleDeposit() }))
 
-    axios.put(`http://localhost:9000/accounts/${parseInt(getFromId)}`, {
+    axios.put(`http://rocketbank-api.onrender.com/accounts/${parseInt(getFromId)}`, {
       balance: userAccount.find(acc => acc.id === parseInt(getFromId)).balance - parseInt(amountToTansfer)
     })
     setSuccessText(true)
   }
 
   useEffect(() => {
-    axios.get("http://localhost:9000/accounts/").then(({ data }) => {
+    axios.get("http://rocketbank-api.onrender.com/accounts/").then(({ data }) => {
       setUserAccount(data);
       setLoading(true)
     })

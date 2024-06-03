@@ -21,7 +21,7 @@ const Accounts = () => {
     const handleShow = () => setShow(true);
 
     const handleDeleteAccount = () => {
-        axios.delete(`http://localhost:9000/accounts/${accountId}`)
+        axios.delete(`http://rocketbank-api.onrender.com/accounts/${accountId}`)
             .then(response => {
                 console.log(`Deleted post with ID ${accountId}`);
             })
@@ -31,7 +31,7 @@ const Accounts = () => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:9000/accounts/").then(({ data }) => {
+        axios.get("http://rocketbank-api.onrender.com/accounts/").then(({ data }) => {
             setUserAccount(data);
             setLoading(true)
         })
