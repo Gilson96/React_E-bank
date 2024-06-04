@@ -31,7 +31,7 @@ const Accounts = () => {
     }
 
     useEffect(() => {
-        axios.get("http://rocketbank-api.onrender.com/accounts/").then(({ data }) => {
+        axios.get("https://rocketbank-api.onrender.com/accounts/").then(({ data }) => {
             setUserAccount(data);
             setLoading(true)
         })
