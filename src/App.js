@@ -17,17 +17,8 @@ function App() {
     <>
 
       <div className='h-screen w-full'>
-        <Routes>
-          <Route path='/React_E-bank' element={<HomePage />} />
-          <Route path='/client' element={<Client />} />
-          <Route path='/admin' element={<Admin />} />
-          <Route path='/create' element={<CreateAccount />} />
-          <Route path='/transfer' element={<Transfer />} />
-          <Route path='/deposit' element={<Deposit />} />
-          <Route path='/withdraw' element={<Withdraw />} />
-          <Route path="/edit" element={<EditAccount />} />
-          
-        </Routes>
+       {/* <HomePage /> */}
+         <Admin/>
       </div>
     </>
 
