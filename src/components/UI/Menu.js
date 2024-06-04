@@ -61,13 +61,13 @@ const Menu = ({
                     setShowPage={showWithdrawPage}
                     showPage={withdrawPage}
                 />
-                <MenuList
+                {/* <MenuList
                     icon={<PowerIcon className='h-12 w-12 ' />}
                     text={'Logout'}
                     setShowPage={showLogoutPage}
                     showPage={logoutPage}
                 />
-        
+         */}
             </div>
         </>
     )

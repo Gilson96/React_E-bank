@@ -60,12 +60,6 @@ const Transfer = () => {
     })
 }, []);
 
-console.log(userAccount.find(acc => acc.id === parseInt(getToId))
-)
-
-console.log(userAccount.find(acc => acc.id === parseInt(getFromId))
-)
-
   return (
     <section className='flex flex-col justify-center items-center w-full'>
 
