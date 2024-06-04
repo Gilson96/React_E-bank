@@ -14,7 +14,7 @@ const CreateAccount = () => {
 
   useEffect(() => {
     if (submitted) {
-      axios.post('http://rocketbank-api.onrender.com/accounts/', {
+      axios.post('https://rocketbank-api.onrender.com/accounts/', {
         id: account[account.length - 1].id,
         firstName: account[account.length - 1].firstName,
         lastName: account[account.length - 1].lastName,

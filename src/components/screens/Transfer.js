@@ -43,18 +43,18 @@ const Transfer = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-   axios.put(`http://rocketbank-api.onrender.com/accounts/${parseInt(getFromId)}`, {
+   axios.put(`https://rocketbank-api.onrender.com/accounts/${parseInt(getFromId)}`, {
       balance: userAccount.find(acc => acc.id === parseInt(getFromId)).balance - parseInt(amountToTansfer)
     })
 
-    axios.put(`http://rocketbank-api.onrender.com/accounts/${parseInt(getToId)}`, {
+    axios.put(`https://rocketbank-api.onrender.com/accounts/${parseInt(getToId)}`, {
       balance: userAccount.find(acc => acc.id === parseInt(getToId)).balance + parseInt(amountToTansfer)
     })
     setSuccessText(true)
   }
 
   useEffect(() => {
-    axios.get("http://rocketbank-api.onrender.com/accounts/").then(({ data }) => {
+    axios.get("https://rocketbank-api.onrender.com/accounts/").then(({ data }) => {
         setUserAccount(data);
         setLoading(true)
     })

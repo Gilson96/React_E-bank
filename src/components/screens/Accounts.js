@@ -21,7 +21,7 @@ const Accounts = () => {
     const handleShow = () => setShow(true);
 
     const handleDeleteAccount = () => {
-        axios.delete(`http://rocketbank-api.onrender.com/accounts/${accountId}`)
+        axios.delete(`https://rocketbank-api.onrender.com/accounts/${accountId}`)
             .then(response => {
                 console.log(`Deleted post with ID ${accountId}`);
             })

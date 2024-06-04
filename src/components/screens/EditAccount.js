@@ -19,7 +19,7 @@ const EditAccount = ({ id, handleShow, handleClose, show }) => {
     const userData = Object.fromEntries(formData.entries()); // {firstName: Gilson}
 
     if (submitted) {
-      axios.put(`http://rocketbank-api.onrender.com/accounts/${id}`, {
+      axios.put(`https://rocketbank-api.onrender.com/accounts/${id}`, {
         firstName: userData.firstName,
         lastName: userData.lastName,
         emailName: userData.email,
