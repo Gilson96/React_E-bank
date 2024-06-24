@@ -3,6 +3,7 @@ import axios from 'axios';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
 import SuccessText from '../UI/SuccessText';
+import useScreenSize from '../features/useScreenSize';
 
 const Transfer = () => {
   // const dispatch = useDispatch();
@@ -13,7 +14,7 @@ const Transfer = () => {
   const [userAccount, setUserAccount] = useState()
   const [loading, setLoading] = useState(false)
   const [successText, setSuccessText] = useState(false)
-
+  const screenSize = useScreenSize()
 
   // gets amount to be transfer
   const handleChangeAmountToTransfer = e => {
@@ -66,7 +67,7 @@ const Transfer = () => {
       {successText && <SuccessText/>}
 
       <Card classname='flex flex-col h-auto w-11/12 bg-[rgb(224,224,206)] p-4 justify-start'>
-        <h1 className='w-full justify-start p-3 uppercase text-2xl'>Transfer Funds</h1>
+        <h1 className={`w-full justify-start p-3 uppercase ${screenSize.width < 1024? 'text-xl' : 'text-2xl'} font-bold`}>Transfer Funds</h1>
 
         <form onSubmit={handleSubmit} className='flex flex-col w-full justify-center items-center'>
 
@@ -123,7 +124,7 @@ const Transfer = () => {
           </select>
 
           <Button
-            classname={'hover:bg-[#AD343E] w-1/2 p-3 font-bold uppercase mt-5'}
+            classname={` ${screenSize.width < 1024? 'w-auto' : 'w-1/2'}hover:bg-[#AD343E]  p-3 font-bold uppercase mt-5`}
             id={'buttonBg'}
 
           >

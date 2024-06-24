@@ -44,7 +44,7 @@ const EditAccount = ({ id, handleShow, handleClose, show }) => {
       >
         <div className='bg-[#E0E0CE] pb-3'>
           <Modal.Header closeButton>
-            <h1>Edit Account</h1>
+            <h1 className='w-full ml-2 p-2 font-bold text-4xl'>Edit Account</h1>
           </Modal.Header>
           <section className='flex flex-col justify-center items-center w-full'>
 

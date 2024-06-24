@@ -6,11 +6,13 @@ import Input from '../UI/Input';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
 import CreateForm from '../UI/CreateForm'
+import useScreenSize from '../features/useScreenSize';
 
 const CreateAccount = () => {
   const account = useSelector(selectCreated);
   const [submitted, setSubmitted] = useState(false)
   const [successText, setSuccessText] = useState(false)
+  const screenSize = useScreenSize()
 
   useEffect(() => {
     if (submitted) {
@@ -36,6 +38,7 @@ const CreateAccount = () => {
       {successText && <div className='flex items-center justify-center w-1/4 h-14 bg-green-300 rounded border border-green-500 z-[9999999] absolute top-3'><p className='text-green-600'>Submitted</p></div>}
 
       <Card classname='h-auto w-11/12 bg-[rgb(224,224,206)] p-4'>
+        
         <CreateForm
           title={'Create Account'}
           buttonText={'create account'}
@@ -86,7 +89,7 @@ const CreateAccount = () => {
             classname={'w-full italic'}
           />
           <Button
-            classname={'hover:bg-[#AD343E] w-1/2 p-3 font-bold uppercase mt-5'}
+            classname={` ${screenSize.width < 1024? 'w-auto' : 'w-1/2'}hover:bg-[#AD343E]  p-3 font-bold uppercase mt-5`}
             id={'buttonBg'}
             onClick={() => { setSubmitted(true) }}
           >

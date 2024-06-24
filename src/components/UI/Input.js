@@ -1,10 +1,11 @@
 import React from 'react'
+import useScreenSize from '../features/useScreenSize'
 
 const Input = ({ label, id, classname, ...props }) => {
-    
+    const screenSize = useScreenSize()
     return (
         <div className='flex w-[95%] h-full p-2 justify-start items-center '>
-            <label className='flex w-1/3 font-bold uppercase'>{label}</label>
+            <label className={`flex flex-wrap ${screenSize.width < 1024? 'text-xs' : 'text-base'} w-1/2 font-bold uppercase`}>{label}</label>
             <input
                 id={id}
                 name={id}

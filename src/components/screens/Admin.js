@@ -12,7 +12,7 @@ const Admin = () => {
 
   return (
     <>
-      <section className='flex w-full h-full'>
+      <section className='flex flex-col w-full h-full gap-2'>
 
         <Menu
           showHomePage={setIsAcitve}
@@ -29,7 +29,7 @@ const Admin = () => {
           logoutPage={'logout'}
         />
 
-        <div className='flex flex-col w-full overflow-y-auto gap-3 my-3'>
+        <div className='flex flex-col w-full h-full overflow-y-auto gap-3 my-3'>
           {isActive === '' && <Accounts /> }
           {isActive === 'home' && <Accounts />}
           {isActive === 'create' && <CreateAccount /> }
