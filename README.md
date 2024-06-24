@@ -13,13 +13,13 @@ Rocket Bank is an online banking platform designed to enable administrators to m
 
 ### Technologies
 
-## Front-end: 
+### Front-end: 
   - React for building interactive user interfaces and Redux for managing application state efficiently.
-## Back-end: 
+### Back-end: 
   - Node.js with Express.js for creating robust RESTful APIs to handle user requests and data processing.
-## Database: 
+### Database: 
  - MongoDB for storing user information, transaction data, and account details securely.
-## Styling: 
+### Styling: 
   - CSS and TailwindCSS for responsive and visually appealing design.
 
 ### Functionality and Features
