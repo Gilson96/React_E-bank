@@ -74,7 +74,7 @@ const Menu = ({
                 </div>
                 :
 
-                <div className={`flex flex-col items-center justify-center h-full ${screenSize.width < 1024 ? 'w-[25%]' : ' w-1/5'} bg-[#474747] border-slate-200 p-3 shadow`}>
+                <div className={`flex flex-col items-center justify-center h-full  w-1/5 bg-[#474747] border-slate-200 p-3 shadow`}>
                     <div className="flex p-3">
                         {screenSize.width < 1024 ? <i className='text-[#F2AF29]'><RocketLaunchIcon className='h-12' /></i> : <Logo />}
                     </div>

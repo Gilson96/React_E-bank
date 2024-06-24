@@ -6,7 +6,7 @@ const Logo = ({ logoClass, textClass }) => {
 
     return (
         <div className='flex my-2'>
-            <i className='text-[#F2AF29]'><RocketLaunchIcon className='h-12'/></i>
+            <i className={`text-[#F2AF29] ${logoClass}`}><RocketLaunchIcon className='h-12'/></i>
             <p id='logoFont' className={`text-4xl ${textClass}`}>ROCKET<span className='text-xl'>bank</span></p>
         </div>
     )

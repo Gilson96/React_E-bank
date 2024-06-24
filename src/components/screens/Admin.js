@@ -6,13 +6,14 @@ import Transfer from './Transfer'
 import Deposit from './Deposit'
 import Withdraw from './Withdraw'
 import { Navigate } from "react-router-dom";
+import useScreenSize from '../features/useScreenSize'
 
 const Admin = () => {
   const [isActive, setIsAcitve] = useState('')
-
+  const screenSize = useScreenSize()
   return (
     <>
-      <section className='flex flex-col w-full h-full gap-2'>
+      <section className={`flex ${screenSize.width < 1024 && 'flex-col'}  w-full h-full gap-2`}>
 
         <Menu
           showHomePage={setIsAcitve}
