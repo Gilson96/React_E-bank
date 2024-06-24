@@ -4,8 +4,8 @@
 
 ### View the app online 
 
-Open the live app in your browser with this link: https://gilson96.github.io/React_E-bank/
-Open the live API in your browser with this link: https://rocketbank-api.onrender.com/accounts/
+- Open the live app in your browser with this link: https://gilson96.github.io/React_E-bank/
+- Open the live API in your browser with this link: https://rocketbank-api.onrender.com/accounts/
 
 ## Intro
 
