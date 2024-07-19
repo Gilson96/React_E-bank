@@ -1,11 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
-import accountReducer from './components/features/accountSlice'
+import { setupListeners } from '@reduxjs/toolkit/query';
+import { apiSlice } from './components/features/apiSlice';
 
-export default configureStore({
+export const store =  configureStore({
   reducer: {
-    account: accountReducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
   },
+  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(apiSlice.middleware),
+  devTools: true
 });
 
+
+setupListeners(store.dispatch);
 
 
