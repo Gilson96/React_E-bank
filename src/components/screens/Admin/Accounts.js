@@ -42,7 +42,7 @@ const Accounts = ({ account, onOpen, setGetId, deleteAccount, getId, setFeedback
                         userId={getId}
                         setFeedback={setFeedback}
                     />
-                    <Button as={'a'} href={`/accounts/${account.id}`} variant='solid'
+                    <Button as={'a'} href={`#/accounts/${account.id}`} variant='solid'
                         colorScheme='#233D4D'
                         className='bg-[#233D4D]'
                         textDecoration={'none'}
