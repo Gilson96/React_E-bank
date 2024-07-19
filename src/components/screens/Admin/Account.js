@@ -27,9 +27,9 @@ const Account = () => {
 
                 <CardHeader className='flex justify-between w-full'>
                     <div></div>
-                    <Heading size='lg' >{account.firstName} {account.lastName}
+                    <Heading size='lg' >{account.accountName}
                     </Heading>
-                    <button><a href='/'><ArrowLeftCircleIcon className='h-7 w-7' /></a></button>
+                    <button><a href='#/'><ArrowLeftCircleIcon className='h-7 w-7' /></a></button>
                 </CardHeader>
 
                 <CardBody className='flex flex-col w-full gap-3'>

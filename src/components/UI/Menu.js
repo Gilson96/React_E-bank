@@ -24,7 +24,7 @@ const MenuNav = () => {
                     <MenuButton className='flex w-full h-16 bg-[#233D4D] p-2 shadow-md'>
                         <Bars3Icon className='w-10 h-10' />
                     </MenuButton>
-                    <MenuList className='m-2'>
+                    <MenuList zIndex={'9999999'} className='m-2'>
                         <MenuItem as={'a'} href='#/' icon={<UserGroupIcon className='h-4 w-4' />}>All Accounts</MenuItem>
                         <MenuItem as={'a'} href='#/create' icon={<UserPlusIcon className='h-4 w-4' />}>Add Accounts</MenuItem>
                         <MenuItem as={'a'} href='#/transfer' icon={<ArrowsRightLeftIcon className='h-4 w-4' />}>Transfer Funds</MenuItem>

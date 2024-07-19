@@ -33,9 +33,10 @@ const EditAccount = ({ initialRef, isOpen, onClose, id }) => {
                     isOpen={isOpen}
                     onClose={onClose}
                     initialFocusRef={initialRef}
+                    
                 >
                     <ModalOverlay />
-                    <ModalContent>
+                    <ModalContent width={'90%'}>
                         <ModalHeader fontWeight={'bold'}>Edit Account</ModalHeader>
                         <ModalCloseButton />
                         <Divider />

@@ -68,10 +68,11 @@ const Deposit = ({ toAccount, editAccount, setFeedback, setToId, accounts, feedb
             </FormControl>
 
             <hr className='text-slate-200 h-1 w-[98%] mt-3' />
-
-            <button className={`${feedback ? 'bg-gray-200' : 'bg-[#F2AF29]'} py-2 px-2.5 text-white ${screenSize.width < 1024? 'w-full' : 'w-[30%]'} rounded`} disabled={feedback ? true : false} >
-                Submit
-            </button>
+            <div>
+                <button className={`${feedback ? 'bg-gray-200' : 'bg-[#F2AF29]'} py-2 px-2.5 text-white w-auto rounded`} disabled={feedback ? true : false} >
+                    Submit
+                </button>
+            </div>
         </form>
     )
 }

@@ -51,14 +51,14 @@ const Accounts = ({ account, onOpen, setGetId, deleteAccount, getId, setFeedback
                     </Button>
                 </div>
             </div>
-            <div className=''>
+            
                 <EditAccount
                     isOpen={isOpen}
                     onClose={onClose}
                     initialRef={initialRef}
                     id={getId}
                 />
-            </div >
+        
         </>
     )
 }
