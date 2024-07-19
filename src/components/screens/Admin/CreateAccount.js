@@ -5,11 +5,6 @@ import {
   InputGroup,
   InputLeftElement,
   Card,
-  NumberDecrementStepper,
-  NumberIncrementStepper,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
   Alert,
   AlertIcon,
   Divider
@@ -18,7 +13,6 @@ import {
   UserIcon,
   EnvelopeIcon,
   KeyIcon,
-  CurrencyPoundIcon
 } from '@heroicons/react/24/outline'
 import { useCreateAccountMutation } from '../../features/apiSlice'
 import useScreenSize from '../../features/useScreenSize'

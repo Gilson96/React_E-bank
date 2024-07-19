@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import useScreenSize from '../features/useScreenSize';
 import { TrashIcon } from '@heroicons/react/24/outline';
-import { useDeleteAccountMutation } from '../features/apiSlice'
+
 
 const DeleteButton = ({setGetId,id, deleteId, userId, setFeedback, feedback}) => {
     const { isOpen, onOpen, onClose } = useDisclosure()

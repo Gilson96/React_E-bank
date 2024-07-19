@@ -18,13 +18,14 @@ const App = () => {
 
         <Routes>
           {screenSize.width < 1024 ?
-            <Route path='/React_E-bank/' element={<Dashboard />} />
+            <Route path='/' element={<Dashboard />} />
             :
-            <Route path='/React_E-bank/' element={<Admin />} />
+            <Route path='/' element={<Admin />} />
           }
           <Route path='/transfer' element={<Transfer />} />
           <Route path='/create' element={<CreateAccount />} />
           <Route path='/accounts/:userId' element={<Account />} />
+          
         </Routes>
       </div >
     </>
