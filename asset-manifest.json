@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React_E-bank/static/css/main.e39932bc.css",
-    "main.js": "/React_E-bank/static/js/main.60040caa.js",
+    "main.js": "/React_E-bank/static/js/main.b9b398cc.js",
     "index.html": "/React_E-bank/index.html",
     "main.e39932bc.css.map": "/React_E-bank/static/css/main.e39932bc.css.map",
-    "main.60040caa.js.map": "/React_E-bank/static/js/main.60040caa.js.map"
+    "main.b9b398cc.js.map": "/React_E-bank/static/js/main.b9b398cc.js.map"
   },
   "entrypoints": [
     "static/css/main.e39932bc.css",
-    "static/js/main.60040caa.js"
+    "static/js/main.b9b398cc.js"
   ]
 }
