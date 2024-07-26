@@ -1,43 +1,35 @@
 # The Rocket Bank
 
-![app preview](https://github.com/Gilson96/myPortfolio/blob/master/src/assets/projectsPics/rocket_bank_1.png?raw=true)
-
+![app preview](https://github.com/Gilson96/React_E-bank/blob/master/src/assets/project.png?raw=true)
 ### View the app online 
-
-(Note: API response from onRender might be a bit slow.)
 - Open the live app in your browser with this link: https://gilson96.github.io/React_E-bank/
-- Open the live API in your browser with this link: https://rocketbank-api.onrender.com/accounts/
+- Open the live API in your browser with this link: https://rocket-bank-6ac2a01241f4.herokuapp.com/accounts/
 
 ## Intro
 
-Rocket Bank is an online banking platform designed to enable administrators to manage user accounts effectively. Built using React for the front-end, Node.js for the back-end, and Redux for state management, this project demonstrates the integration of modern web technologies to create a responsive and user-friendly interface.
+Rocket Bank is an online banking platform designed to enable users to manage user accounts effectively. Built using React for the front-end, Node.js for the back-end, and Redux for state management, this project demonstrates the integration of modern web technologies to create a responsive and user-friendly interface.
 
 ## Technologies
 
-### Front-end: 
-  - React for building interactive user interfaces and Redux for managing application state efficiently.
-### Back-end: 
-  - Node.js with Express.js for creating robust RESTful APIs to handle user requests and data processing.
-### Database: 
- - MongoDB for storing user information, transaction data, and account details securely.
-### Styling: 
-  - CSS and TailwindCSS for responsive and visually appealing design.
-
+### React: 
+  - Utilized for building the user interface.
+  - Component-based architecture for modular development.
+  - React hooks for managing state and side effects.
+### Redux Tolkit: 
+  - Centralized state management for the application.
+  - Simplifies state updates with slices and reducers.
+  - Middleware for handling asynchronous operations.
+### MongoDB and Mongoose: 
+ - MongoDB as the NoSQL database to store user data, transactions, and other banking information.
+ - Mongoose for object data modelling (ODM) to provide schema-based solutions and data validation.
+### Tailwind CSS: 
+  - Utility-first CSS framework for rapid UI development.
+  - Customizable and responsive design system.
+  - Consistent styling across the application with minimal custom CSS.
+  - 
 ## Functionality and Features
 
-- Account Management: Admins can view, add, edit and delete user accounts.
-- Fund Transfers: Enable admins to transfer, deposit and withdraw funds between accounts with real-time balance updates.
+- Account Management: Users can view, add, edit and delete user accounts.
+- Fund Transfers: Enable users to transfer, deposit and withdraw funds between accounts with real-time balance updates.
 - Responsive Design: Ensures accessibility and usability across various devices and screen sizes.
 
-## Achievements
-
-- Designed a responsive and intuitive user interface with React and Redux, ensuring a seamless user experience.
-- Developed RESTful APIs with Node.js to handle complex transactions and data retrieval efficiently.
-- Ensured data consistency and integrity using MongoDB as the database solution.
-
-## Challenges Overcome
-
-- Managing state across a complex application using Redux, ensuring efficient data flow and updates.
-- Creating a responsive design that works well across different devices and screen sizes.
-
-````
