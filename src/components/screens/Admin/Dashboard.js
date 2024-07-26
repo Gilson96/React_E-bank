@@ -44,7 +44,7 @@ const Dashboard = () => {
                         </i>
                         <input
                             type='text'
-                            placeholder='search'
+                            placeholder='search full name'
                             value={inputValue}
                             onChange={handleChange}
                             width={'30%'}
